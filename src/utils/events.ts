@@ -37,3 +37,5 @@ export const sendDataToGA = async (payload: Payload) => {
     console.error('Error!', error);
   }
 };
+
+export const delay = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
